@@ -1,0 +1,16 @@
+> library(readxl)
+> health_unit_district_wise_covid_19_vaccination_in_tamilnadu_as_on_22_04_2021 <- read_excel("C:/Users/krish/Downloads/health_unit_district_wise_covid_19_vaccination_in_tamilnadu_as_on_22_04_2021.xls")
+> View(health_unit_district_wise_covid_19_vaccination_in_tamilnadu_as_on_22_04_2021)
+> johana<-read_excel("C:/Users/krish/Downloads/health_unit_district_wise_covid_19_vaccination_in_tamilnadu_as_on_22_04_2021.xls")
+> mean(johana$`Session held for Covishield`)
+[1] 156.8261
+> sd(johana$`Session held for Covishield`)
+[1] 522.556
+> mean(johana)
+[1] NA
+Warning message:
+In mean.default(johana) : argument is not numeric or logical: returning NA
+> mean(johana$`Session held for Covaxin`)
+[1] 24.6087
+> sd(johana$`Session held for Covaxin`)
+[1] 84.51179
